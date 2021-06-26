@@ -3,7 +3,7 @@
 ## Implement SortingHat: A school hostel assignment Program
 #include <stdio.h>
 
-### function to compare two strings,returns 0 if both are equal else returns 1
+#### Function to compare two strings,returns 0 if both are equal else returns 1
 int compare(char a[],char b[])  
 {  
     int flag=0,i=0;  
@@ -39,13 +39,12 @@ int main(void)
 		if(compare(str,"fin")==0)
 		break;
 		scanf("%d %c %s",&roll,&class_room,food);
- 
+## Allocationg students to classroom A
 		if(class_room=='A')
 		{
-####                    Allocating students to "AV"
+####  Allocating students to "AV" and students  to "NA" if it reaches max limit
 			if(compare(food,"V")==0)
 			{
-####                            Allocating  students  to "NA" if it reaches limit
 				if(j0==maxPeople)
 				{
 
@@ -58,10 +57,9 @@ int main(void)
 					j0++;
 				}
 			}
-#### 			Allocating students to "ANV"
+####  Allocating students to "ANV" and students  to "NA" if it reaches max limit
 			else if(compare(food,"NV")==0)
 			{
-####                            Allocating  students  to "NA" if it reaches limit
 				if(j1==maxPeople)
 				{
 					arr[4][j4]=roll;
@@ -74,12 +72,12 @@ int main(void)
 				}
 			}
 		}
+## Allocationg students to classroom B
 		else if(class_room=='B')
 		{
-####                    Allocating students to "BV"
+####  Allocating students to "BV" and students  to "NA" if it reaches max limit
 			if(compare(food,"V")==0)
 			{
-####                            Allocating  students  to "NA" if it reaches limit
 				if(j2==maxPeople)
 				{
 					arr[4][j4]=roll;
@@ -91,10 +89,9 @@ int main(void)
 					j2++;
 				}
 			}
-#### 			Allocating students to "BNV"
+####  Allocating students to "BNV" and students  to "NA" if it reaches max limit
 			else if(compare(food,"NV")==0)
 			{
-#### 				Allocating  students  to "NA" if it reaches limit
 				if(j3==maxPeople)
 				{
 				
