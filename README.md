@@ -23,8 +23,10 @@ int compare(char a[],char b[])
     return 1;  
 }  
  
+ 
 int main(void) 
 {
+
 	char str[10];
 	int roll,val,k;
 	char class_room;
