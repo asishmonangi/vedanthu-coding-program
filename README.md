@@ -1,7 +1,10 @@
 # vedanthu-coding-program
+
 ## Implement SortingHat: A school hostel assignment Program
+
 #### Function to compare two strings,returns 0 if both are equal else returns 1
 #include <stdio.h>
+
 int compare(char a[],char b[])  
 {  
     int flag=0,i=0;  
