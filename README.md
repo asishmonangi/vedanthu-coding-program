@@ -6,7 +6,7 @@
 ### function to compare two strings,returns 0 if both are equal else returns 1
 int compare(char a[],char b[])  
 {  
-    int flag=0,i=0;   
+    int flag=0,i=0;  
     while(a[i]!='\0' &&b[i]!='\0')
     {  
        if(a[i]!=b[i])  
@@ -42,12 +42,13 @@ int main(void)
  
 		if(class_room=='A')
 		{
-		  #### Allocating students to "AV"
+####                    Allocating students to "AV"
 			if(compare(food,"V")==0)
 			{
+####                            Allocating  students  to "NA" if it reaches limit
 				if(j0==maxPeople)
 				{
-				#### Allocating  students  to "NA" if it reaches limit
+
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -57,12 +58,12 @@ int main(void)
 					j0++;
 				}
 			}
-		#### Allocating students to "ANV"
+#### 			Allocating students to "ANV"
 			else if(compare(food,"NV")==0)
 			{
+####                            Allocating  students  to "NA" if it reaches limit
 				if(j1==maxPeople)
 				{
-				#### Allocating  students  to "NA" if it reaches limit
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -75,12 +76,12 @@ int main(void)
 		}
 		else if(class_room=='B')
 		{
-		   #### Allocating students to "BV"
+####                    Allocating students to "BV"
 			if(compare(food,"V")==0)
 			{
+####                            Allocating  students  to "NA" if it reaches limit
 				if(j2==maxPeople)
 				{
-				#### Allocating  students  to "NA" if it reaches limit
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -90,12 +91,13 @@ int main(void)
 					j2++;
 				}
 			}
-		#### Allocating students to "BNV"
+#### 			Allocating students to "BNV"
 			else if(compare(food,"NV")==0)
 			{
+#### 				Allocating  students  to "NA" if it reaches limit
 				if(j3==maxPeople)
 				{
-				#### Allocating  students  to "NA" if it reaches limit
+				
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -108,7 +110,9 @@ int main(void)
 		}
  
 	}
-	# for-loop for printing the students in several groups 
+	
+## printing the students in several groups 
+
 	for(int i=0;i<5;i++)
 	{
 		switch(i)
