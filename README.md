@@ -1,7 +1,9 @@
 # vedanthu-coding-program
-Implement SortingHat: A school hostel assignment Program
+
+## Implement SortingHat: A school hostel assignment Program
 #include <stdio.h>
- 
+
+### function to compare two strings,returns 0 if both are equal else returns 1
 int compare(char a[],char b[])  
 {  
     int flag=0,i=0;   
@@ -22,6 +24,7 @@ int compare(char a[],char b[])
  
 int main(void) 
 {
+       
 	char str[10];
 	int roll,val,k;
 	char class_room;
@@ -39,10 +42,12 @@ int main(void)
  
 		if(class_room=='A')
 		{
+		  #### Allocating students to "AV"
 			if(compare(food,"V")==0)
 			{
 				if(j0==maxPeople)
 				{
+				#### Allocating  students  to "NA" if it reaches limit
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -52,10 +57,12 @@ int main(void)
 					j0++;
 				}
 			}
+		#### Allocating students to "ANV"
 			else if(compare(food,"NV")==0)
 			{
 				if(j1==maxPeople)
 				{
+				#### Allocating  students  to "NA" if it reaches limit
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -68,10 +75,12 @@ int main(void)
 		}
 		else if(class_room=='B')
 		{
+		   #### Allocating students to "BV"
 			if(compare(food,"V")==0)
 			{
 				if(j2==maxPeople)
 				{
+				#### Allocating  students  to "NA" if it reaches limit
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -81,10 +90,12 @@ int main(void)
 					j2++;
 				}
 			}
+		#### Allocating students to "BNV"
 			else if(compare(food,"NV")==0)
 			{
 				if(j3==maxPeople)
 				{
+				#### Allocating  students  to "NA" if it reaches limit
 					arr[4][j4]=roll;
 					j4++;
 				}
@@ -97,6 +108,7 @@ int main(void)
 		}
  
 	}
+	# for-loop for printing the students in several groups 
 	for(int i=0;i<5;i++)
 	{
 		switch(i)
