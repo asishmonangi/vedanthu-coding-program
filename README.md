@@ -1,11 +1,7 @@
 # vedanthu-coding-program
-
 ### Implement SortingHat: A school hostel assignment Program
-
 #include <stdio.h>
-
 #### Function to compare two strings,returns 0 if both are equal else returns 1
-
 int compare(char a[],char b[])  
 {  
     int flag=0,i=0;  
@@ -23,9 +19,7 @@ int compare(char a[],char b[])
     else  
     return 1;  
 }  
- 
 #### Main function
-
 int main(void) 
 {
 
