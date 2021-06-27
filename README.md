@@ -1,10 +1,9 @@
-# vedanthu-coding-program
+# vedanthu-coding-program  ( Implement SortingHat: A school hostel assignment Program)
 
-## Implement SortingHat: A school hostel assignment Program
-
-#### Function to compare two strings,returns 0 if both are equal else returns 1
 #include <stdio.h>
 
+## Function to compare two strings,returns 0 if both are equal else returns 1
+```c
 int compare(char a[],char b[])  
 {  
     int flag=0,i=0;  
@@ -22,10 +21,11 @@ int compare(char a[],char b[])
     else  
     return 1;  
 }  
-#### Main function
+```
+# Main function
+```c
 int main(void) 
 {
-
 	char str[10];
 	int roll,val,k;
 	char class_room;
@@ -40,11 +40,15 @@ int main(void)
 		if(compare(str,"fin")==0)
 		break;
 		scanf("%d %c %s",&roll,&class_room,food);
+```
 ## Allocationg students to classroom A
+```c
 		if(class_room=='A')
 		{
+```
 ####  Allocating students to "AV" and students  to "NA" if it reaches max limit
-			if(compare(food,"V")==0)
+```c
+		if(compare(food,"V")==0)
 			{
 				if(j0==maxPeople)
 				{
@@ -58,7 +62,9 @@ int main(void)
 					j0++;
 				}
 			}
+```
 ####  Allocating students to "ANV" and students  to "NA" if it reaches max limit
+```c
 			else if(compare(food,"NV")==0)
 			{
 				if(j1==maxPeople)
@@ -73,10 +79,14 @@ int main(void)
 				}
 			}
 		}
+```
 ## Allocationg students to classroom B
+```c
 		else if(class_room=='B')
 		{
+```
 ####  Allocating students to "BV" and students  to "NA" if it reaches max limit
+```c
 			if(compare(food,"V")==0)
 			{
 				if(j2==maxPeople)
@@ -90,7 +100,9 @@ int main(void)
 					j2++;
 				}
 			}
+```
 ####  Allocating students to "BNV" and students  to "NA" if it reaches max limit
+```c
 			else if(compare(food,"NV")==0)
 			{
 				if(j3==maxPeople)
@@ -108,9 +120,9 @@ int main(void)
 		}
  
 	}
-	
-## printing the students in several groups 
-
+```
+## code to show the students in several groups
+```c
 	for(int i=0;i<5;i++)
 	{
 		switch(i)
@@ -153,4 +165,4 @@ int main(void)
 		}
 	}
 }
- 
+```
