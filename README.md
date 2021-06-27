@@ -166,3 +166,62 @@ int main(void)
 	}
 }
 ```
+## Sample test case 1
+
+```c
+init 12
+reg 1 B V
+reg 2 A V
+reg 3 A V
+reg 4 B NV
+reg 5 B V
+reg 6 A NV
+reg 7 A V
+reg 8 A NV
+reg 9 B NV
+reg 10 B V
+reg 11 A NV
+reg 12 B NV
+reg 13 A NV
+fin
+
+```
+## output 1
+
+```c
+AV : [2,3,7]
+ANV : [6,8,11]
+BV : [1,5,10]
+BNV : [4,9,12]
+NA : [13]
+
+```
+## Sample test case 2
+
+```c
+init 12
+reg 1 B V
+reg 2 A V
+reg 3 A V
+reg 4 B NV
+reg 5 B V
+reg 6 A NV
+reg 7 A V
+reg 8 A NV
+reg 9 B NV
+reg 10 B V
+reg 11 A NV
+reg 12 B NV
+fin
+
+```
+## ouput 2
+
+```c
+BV : [1,5,10]
+AV : [2,3,7]
+BNV : [4,9,12]
+ANV : [6,8,11]
+NA : []
+
+```
