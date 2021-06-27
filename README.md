@@ -199,7 +199,7 @@ NA : [13]
 ## Sample test case 2
 
 ```c
-init 13
+init 12
 reg 1 B V
 reg 2 A V
 reg 3 A V
